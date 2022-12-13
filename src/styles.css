@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    text-align: center;
+    background-color: aquamarine;
+    font-family: 'Nabla', cursive;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background: aquamarine;
+    border: none;
+    border-radius: .5rem;
+    color: purple;
+    font-size: small;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+        -6px -6px 10px rgba(255, 255, 255, .5),
+        6px 6px 8px rgba(255, 255, 255, .075),
+        6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+button:hover {
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+        -2px -2px 4px rgba(255, 255, 255, .4),
+        2px 2px 2px rgba(255, 255, 255, .05),
+        2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+button:active {
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+        inset -2px -2px 4px rgba(255, 255, 255, .5),
+        inset 2px 2px 2px rgba(255, 255, 255, .075),
+        inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+
+ul {
+
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-radius: 30px;
+    background: linear-gradient(225deg, #88ffe3, #72e6bf);
+    box-shadow: -12px 12px 24px #39735f,
+        12px -12px 24px #c5ffff;
+}
+
+li {
+    margin: 20px;
+    font-size: 20px;
+}
+
+input {
+    margin: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    text-indent: 40px;
+    padding: 20px 10px 20px 5px;
+    border-radius: 50px;
+    background: #7FFFD4;
+    box-shadow: inset 7px 7px 14px #56ad90,
+        inset -7px -7px 14px #a8ffff;
+}
+
+form {
+    margin: 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(225deg, #88ffe3, #72e6bf);
+    box-shadow: -22px 22px 34px #39735f,
+        12px -12px 24px #c5ffff;
+}
+
+fieldset {
+    outline: none;
+    border: none;
+
+}
+
+label {
+    font-size: x-large;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    margin-left: 6px;
+    font-size: 30px;
+}
