@@ -4,9 +4,9 @@
   <li *ngFor="let task of tasks">
     {{task.id}}.
     {{task.title}} - 
-    <Button *ngIf="!task.done" (click)="markAsDone(task)">CONCLUIR</Button> |
-    <Button *ngIf="task.done" (click)="markAsUndone(task)">REFAZER</Button> |
-    <Button (click)="remove(task)">REMOVER</Button>
+    <Button *ngIf="!task.done" (click)="markAsDone(task)"><i class="fa-regular fa-circle-check"></i> </Button> 
+    <Button *ngIf="task.done" (click)="markAsUndone(task)"><i class="fa-solid fa-circle-check"></i> </Button> 
+    <Button (click)="remove(task)"> <i class="fa-solid fa-trash"></i></Button>
   </li>
 </ul>
 
@@ -20,7 +20,7 @@
           placeholder="Título da tarefa" 
           maxlength="60" 
           formControlName="title">
-          <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine"><h3 class="animated tada">Esse campo deve conter entre 3 e 6 caracteres</h3></small>
+          <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine"><h3 class="animated tada">Esse campo deve conter entre 3 e 60 caracteres</h3></small>
         <button [disabled]="form.invalid" (click)="add()" class="button"><i class="far fa-save"></i> Salvar</button>
       </fieldset>
   </form>
